@@ -201,4 +201,10 @@ class TVAEGenerator(BaseTabularGenerator):
                 cat_indices = np.array([np.random.choice(len(cats), p=p) for p in probs])
                 synth_dict[col] = [cats[i] for i in cat_indices]
 
-        return pd.DataFrame(synth_dict)[self.columns]
+        df_synth = pd.DataFrame(synth_dict)[self.columns]
+        for col in self.columns:
+            try:
+                df_synth[col] = df_synth[col].astype(self.dtypes[col])
+            except Exception:
+                pass
+        return df_synth

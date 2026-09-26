@@ -155,4 +155,9 @@ class GaussianCopulaGenerator(BaseTabularGenerator):
             return pd.DataFrame(index=range(n_samples))
 
         df_synth = pd.DataFrame(synth_dict)[self.columns]
+        for col in self.columns:
+            try:
+                df_synth[col] = df_synth[col].astype(self.dtypes[col])
+            except Exception:
+                pass
         return df_synth

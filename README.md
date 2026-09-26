@@ -85,19 +85,19 @@ Traditional synthetic data workflows either produce unrealistic data or suffer f
 - [x] Unit tests for all generators (`tests/test_generators.py`)
 
 ### Phase 3 — Comprehensive Evaluation Suite
-**Status: In Progress ⏳**
-- [ ] Statistical similarity metrics (Kolmogorov-Smirnov, 1-Wasserstein, Total Variation Distance)
-- [ ] Correlation preservation & Cramer's V association
-- [ ] ML Utility (Train on Synthetic / Test on Real - Classification & Regression)
-- [ ] Empirical Privacy Risk (Exact matches, Distance to Closest Record - DCR, NNDR)
-- [ ] Unit tests for evaluators
+**Status: Completed ✅**
+- [x] Statistical similarity metrics (Kolmogorov-Smirnov Test, 1-Wasserstein, Total Variation Distance)
+- [x] Correlation preservation, Frobenius norm difference & Cramer's V association
+- [x] ML Utility benchmark: TSTR (Train on Synthetic, Test on Real) vs TRTR (Train on Real, Test on Real) for Classification & Regression
+- [x] Empirical Privacy Risk (Exact duplicates, Distance to Closest Record - DCR, Nearest Neighbor Distance Ratio - NNDR, Memorization score)
+- [x] Unit tests for all evaluators (`tests/test_evaluators.py`)
 
 ### Phase 4 — Natural Language GenAI Interface
-**Status: Pending ⏹️**
-- [ ] Natural language prompt parsing
-- [ ] Generation parameter auto-configuration (sample sizes, priority columns, privacy constraints)
+**Status: In Progress ⏳**
+- [ ] Natural language prompt parser (`IntentParser`)
+- [ ] Automated generation parameter extraction (sample sizes, priority columns, target objectives, privacy constraints)
 - [ ] LLM integration (Gemini / OpenAI API + local deterministic fallback)
-- [ ] Interactive configuration preview
+- [ ] Interactive configuration preview & parameter validation
 
 ### Phase 5 — Automated Evaluation & AI Reporting
 **Status: Pending ⏹️**
