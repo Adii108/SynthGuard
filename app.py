@@ -1,7 +1,4 @@
-"""
-SynthGuard: GenAI Platform for Synthetic Tabular Data Generation, Evaluation & Privacy Risk Analysis.
-Main Streamlit Application.
-"""
+import synthguard.utils.numpy_compat  # Applies NumPy 2.x compatibility patches
 import streamlit as st
 import pandas as pd
 import numpy as np
