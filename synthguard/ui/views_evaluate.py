@@ -1,6 +1,5 @@
 """
-Stitch View 4: Statistical Similarity, Correlation Preservation & ML Utility Evaluation.
-Mapped from Stitch Screen: 'Evaluate — Statistical & ML Utility' (f54f47ec8a294d50885682d064aaa109).
+Stitch View 4: Statistical Similarity, Correlation Preservation & ML Utility Evaluation (Refined).
 """
 import streamlit as st
 import pandas as pd
@@ -34,8 +33,12 @@ def render_evaluate_view():
     ml = summary.ml_utility
 
     st.markdown("""
-    <div>
-        <h1 class="stitch-display">Statistical Fidelity & ML Utility Evaluation</h1>
+    <div style="margin-top: 10px; margin-bottom: 20px;">
+        <div style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: #E5EDE7; border: 1px solid #C8D6CC; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #0A2E24; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: #3A6753;"></span>
+            Stage 03 · Dual Fidelity & ML Utility Evaluation
+        </div>
+        <h1 class="stitch-display" style="margin-top: 4px;">Statistical Fidelity & ML Utility Evaluation</h1>
         <p class="stitch-subhead">Empirical comparison between original dataset and generated synthetic data across marginal, joint, and predictive axes.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -48,7 +51,7 @@ def render_evaluate_view():
     ]
     render_kpi_bar(kpi_data)
 
-    st.markdown("<div style='height: 16px;'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='height: 14px;'></div>", unsafe_allow_html=True)
 
     tab1, tab2, tab3 = st.tabs([
         "📊 1. Marginal Feature Distributions",
@@ -57,7 +60,7 @@ def render_evaluate_view():
     ])
 
     with tab1:
-        st.markdown("### Feature Distribution Overlays")
+        st.markdown("<h3 style='color: #06271F; font-family: \"Source Serif 4\", serif; font-size: 19px; font-weight: 600; margin-bottom: 6px;'>Feature Distribution Overlays</h3>", unsafe_allow_html=True)
         st.write("Two-Sample Kolmogorov-Smirnov (KS) Test for continuous features and Total Variation Distance (TVD) for categorical features.")
 
         sel_col = st.selectbox("Select Feature to Inspect:", list(df_real.columns))
@@ -68,10 +71,10 @@ def render_evaluate_view():
             if is_num:
                 fig = go.Figure()
                 fig.add_trace(go.Histogram(
-                    x=df_real[sel_col], name='Real Data', opacity=0.6, marker_color='#06271F', histnorm='probability density'
+                    x=df_real[sel_col], name='Real Data', opacity=0.65, marker_color='#0A2E24', histnorm='probability density'
                 ))
                 fig.add_trace(go.Histogram(
-                    x=df_synth[sel_col], name='Synthetic Data', opacity=0.6, marker_color='#3A6753', histnorm='probability density'
+                    x=df_synth[sel_col], name='Synthetic Data', opacity=0.65, marker_color='#3A6753', histnorm='probability density'
                 ))
                 fig.update_layout(
                     barmode='overlay',
@@ -80,7 +83,8 @@ def render_evaluate_view():
                     yaxis_title="Probability Density",
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='#FFFFFF',
-                    font=dict(family="Inter", size=12)
+                    font=dict(family="Inter", size=12, color="#0D1F1A"),
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
                 )
                 st.plotly_chart(fig, use_container_width=True)
             else:
@@ -96,24 +100,27 @@ def render_evaluate_view():
                 fig = px.bar(
                     df_cat_comb, x=sel_col, y="Proportion", color="Source", barmode="group",
                     title=f"Category Distribution: {sel_col}",
-                    color_discrete_map={"Real": "#06271F", "Synthetic": "#3A6753"}
+                    color_discrete_map={"Real": "#0A2E24", "Synthetic": "#3A6753"}
                 )
-                fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='#FFFFFF', font=dict(family="Inter", size=12))
+                fig.update_layout(
+                    paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='#FFFFFF', font=dict(family="Inter", size=12, color="#0D1F1A"),
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+                )
                 st.plotly_chart(fig, use_container_width=True)
 
         with col_c2:
             if sel_col in stat.column_scores:
                 sc = stat.column_scores[sel_col]
                 st.markdown(f"""
-                <div class="stitch-card" style="margin-top: 20px;">
-                    <div style="font-size: 11px; color: #717975; text-transform: uppercase; font-weight: 600;">Similarity Score</div>
-                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; color: #06271F; margin: 4px 0;">{sc.similarity_score:.1%}</div>
-                    <div style="font-size: 12px; color: #414845; margin-bottom: 8px;"><b>Metric:</b> {sc.metric_name} (`{sc.metric_value:.4f}`)</div>
-                    <div style="font-size: 12px; color: #717975; line-height: 1.4;">{sc.summary_text}</div>
+                <div class="stitch-card" style="margin-top: 20px; border-left: 4px solid #0A2E24;">
+                    <div style="font-size: 11px; color: #4A6357; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em;">Similarity Score</div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 30px; font-weight: 700; color: #06271F; margin: 4px 0;">{sc.similarity_score:.1%}</div>
+                    <div style="font-size: 13px; color: #2E453B; margin-bottom: 8px;"><b>Metric:</b> {sc.metric_name} (<code>{sc.metric_value:.4f}</code>)</div>
+                    <div style="font-size: 12px; color: #4A6357; line-height: 1.5;">{sc.summary_text}</div>
                 </div>
                 """, unsafe_allow_html=True)
 
-        st.markdown("#### Complete Feature Similarity Table")
+        st.markdown("<h4 style='color: #06271F; font-size: 16px; font-weight: 600; margin-top: 16px;'>Complete Feature Similarity Metrics</h4>", unsafe_allow_html=True)
         stat_rows = []
         for col, cs in stat.column_scores.items():
             stat_rows.append({
@@ -127,7 +134,7 @@ def render_evaluate_view():
         st.dataframe(pd.DataFrame(stat_rows), use_container_width=True)
 
     with tab2:
-        st.markdown("### Pairwise Correlation & Association Preservation")
+        st.markdown("<h3 style='color: #06271F; font-family: \"Source Serif 4\", serif; font-size: 19px; font-weight: 600; margin-bottom: 6px;'>Pairwise Correlation & Association Preservation</h3>", unsafe_allow_html=True)
         st.write(corr.summary_text)
 
         col_h1, col_h2 = st.columns(2)
@@ -136,7 +143,7 @@ def render_evaluate_view():
             fig_r = px.imshow(
                 df_real_corr, text_auto=".2f", color_continuous_scale="Tealgrn", zmin=-1, zmax=1, title="Real Data Correlation Matrix"
             )
-            fig_r.update_layout(paper_bgcolor='rgba(0,0,0,0)', font=dict(family="Inter", size=11))
+            fig_r.update_layout(paper_bgcolor='rgba(0,0,0,0)', font=dict(family="Inter", size=11, color="#0D1F1A"))
             st.plotly_chart(fig_r, use_container_width=True)
 
         with col_h2:
@@ -144,24 +151,24 @@ def render_evaluate_view():
             fig_s = px.imshow(
                 df_synth_corr, text_auto=".2f", color_continuous_scale="Tealgrn", zmin=-1, zmax=1, title="Synthetic Data Correlation Matrix"
             )
-            fig_s.update_layout(paper_bgcolor='rgba(0,0,0,0)', font=dict(family="Inter", size=11))
+            fig_s.update_layout(paper_bgcolor='rgba(0,0,0,0)', font=dict(family="Inter", size=11, color="#0D1F1A"))
             st.plotly_chart(fig_s, use_container_width=True)
 
         col_pr, col_deg = st.columns(2)
         with col_pr:
-            st.markdown("#### ✅ Preserved Feature Relationships")
+            st.markdown("<h4 style='color: #06271F; font-size: 15px; font-weight: 600;'>✅ Top Preserved Feature Relationships</h4>", unsafe_allow_html=True)
             st.dataframe(pd.DataFrame(corr.preserved_pairs), use_container_width=True)
         with col_deg:
-            st.markdown("#### ⚠️ Attenuated / Drifted Feature Relationships")
+            st.markdown("<h4 style='color: #06271F; font-size: 15px; font-weight: 600;'>⚠️ Attenuated / Drifted Feature Relationships</h4>", unsafe_allow_html=True)
             if corr.degraded_pairs:
                 st.dataframe(pd.DataFrame(corr.degraded_pairs), use_container_width=True)
             else:
                 st.success("No significant correlation degradation observed!")
 
     with tab3:
-        st.markdown("### Downstream Machine Learning Utility: Train on Synthetic, Test on Real (TSTR)")
+        st.markdown("<h3 style='color: #06271F; font-family: \"Source Serif 4\", serif; font-size: 19px; font-weight: 600; margin-bottom: 6px;'>Downstream Machine Learning Utility: Train on Synthetic, Test on Real (TSTR)</h3>", unsafe_allow_html=True)
         st.markdown("""
-        <div class="stitch-card-inset" style="font-size: 13px; color: #414845;">
+        <div class="stitch-card-inset" style="font-size: 13px; color: #2E453B; line-height: 1.5;">
             <strong>Methodology:</strong> We train predictive models exclusively on the <i>generated synthetic dataset</i> and evaluate their generalization on unseen <i>real test data</i>. 
             Comparing these scores against the empirical <i>Train on Real, Test on Real (TRTR)</i> baseline measures how well the synthetic data preserves true decision boundaries.
         </div>

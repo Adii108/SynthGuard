@@ -1,6 +1,5 @@
 """
-Stitch View 6: Comprehensive AI Evaluation Dossier & Report Export.
-Mapped from Stitch Screen: 'Report — Comprehensive Evaluation Dossier' (c6efe2fa4b204a4caef8bfbbb47bc47b).
+Stitch View 6: Comprehensive AI Evaluation Dossier & Report Export (Refined).
 """
 import streamlit as st
 import io
@@ -19,8 +18,12 @@ def render_report_view():
     html_report = report_gen.generate_html_report(summary, config, st.session_state.dataset_name)
 
     st.markdown("""
-    <div>
-        <h1 class="stitch-display">Comprehensive AI Evaluation Dossier</h1>
+    <div style="margin-top: 10px; margin-bottom: 20px;">
+        <div style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: #E5EDE7; border: 1px solid #C8D6CC; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #0A2E24; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: #3A6753;"></span>
+            Stage 05 · Final Audit Dossier
+        </div>
+        <h1 class="stitch-display" style="margin-top: 4px;">Comprehensive AI Evaluation Dossier</h1>
         <p class="stitch-subhead">Grounded technical and executive audit report synthesized directly from calculated empirical metrics.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -59,7 +62,7 @@ def render_report_view():
 
     # Dossier Document Card
     st.markdown("""
-    <div class="stitch-card" style="padding: 28px; background: #FFFFFF;">
+    <div class="stitch-card" style="padding: 32px; background: #FFFFFF; border: 1px solid #DCE5DE; border-radius: 10px;">
     """, unsafe_allow_html=True)
 
     st.markdown(md_report)
