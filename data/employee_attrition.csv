@@ -1,0 +1,601 @@
+Age,JobRole,MonthlyIncome,YearsAtCompany,WorkLifeBalance,OverTime,Attrition
+40,Sales Executive,9663,3,3,No,Yes
+35,Software Engineer,7290,8,3,No,Yes
+42,Software Engineer,10949,3,2,No,No
+49,Software Engineer,10476,2,2,Yes,No
+35,Software Engineer,8782,3,2,No,No
+35,Research Scientist,6928,8,2,No,No
+49,Sales Executive,10043,2,2,No,Yes
+43,Research Scientist,9736,0,3,No,No
+33,Sales Executive,7659,6,4,Yes,No
+41,HR Specialist,8087,8,3,Yes,Yes
+33,Software Engineer,8611,0,2,No,No
+33,Research Scientist,7526,1,1,Yes,No
+38,Research Scientist,8186,0,3,No,No
+21,HR Specialist,3510,1,3,No,No
+23,Sales Executive,6737,2,3,No,Yes
+32,Software Engineer,8163,6,3,Yes,Yes
+28,Research Scientist,5406,5,3,Yes,No
+39,Software Engineer,9463,4,2,Yes,No
+29,Sales Executive,8120,2,3,No,Yes
+25,Manager,13010,5,2,No,No
+48,HR Specialist,8930,3,4,Yes,Yes
+35,Software Engineer,8790,15,3,No,No
+37,Software Engineer,9167,5,2,No,No
+25,HR Specialist,6246,0,2,Yes,Yes
+32,Software Engineer,8689,5,2,No,No
+37,Sales Executive,8918,1,3,No,No
+27,Software Engineer,8178,5,2,Yes,No
+40,Software Engineer,10043,0,3,Yes,No
+32,Research Scientist,6904,0,2,No,No
+34,Software Engineer,8702,9,3,No,No
+32,HR Specialist,6217,1,3,No,No
+51,HR Specialist,9657,9,3,No,No
+36,Research Scientist,8216,1,3,Yes,Yes
+28,Sales Executive,7071,5,2,Yes,No
+43,HR Specialist,8679,5,1,No,Yes
+27,Manager,12811,3,3,Yes,No
+38,Sales Executive,8887,1,3,Yes,No
+21,HR Specialist,3081,1,3,No,No
+26,Manager,13229,0,1,No,Yes
+38,Research Scientist,8347,1,2,No,No
+42,Software Engineer,10858,5,1,No,No
+38,Research Scientist,6402,13,4,Yes,No
+36,Sales Executive,9733,10,2,No,Yes
+34,Research Scientist,7336,7,3,Yes,No
+25,Manager,13164,5,1,No,No
+31,Sales Executive,6956,5,3,No,No
+33,Research Scientist,7607,1,2,No,Yes
+45,Research Scientist,8767,11,4,No,No
+39,Research Scientist,7945,5,4,No,No
+22,HR Specialist,5608,2,2,Yes,Yes
+39,Research Scientist,8205,0,4,No,No
+33,Research Scientist,7370,2,4,No,No
+31,Software Engineer,8802,3,3,Yes,No
+41,Research Scientist,8977,9,3,No,No
+45,Sales Executive,10190,3,2,No,No
+44,Research Scientist,9438,2,3,Yes,Yes
+30,Sales Executive,8842,10,1,No,No
+34,Sales Executive,8085,0,1,No,No
+39,Research Scientist,8440,2,4,No,No
+44,Research Scientist,9850,0,2,No,Yes
+33,HR Specialist,7103,6,3,No,No
+35,Research Scientist,8312,12,3,No,No
+28,Software Engineer,8123,1,4,No,No
+27,Software Engineer,6874,7,4,Yes,No
+43,Sales Executive,10720,1,2,No,No
+47,Software Engineer,10472,12,1,No,Yes
+36,Sales Executive,8661,7,3,Yes,Yes
+45,HR Specialist,8147,8,2,No,No
+39,Sales Executive,8981,0,1,No,No
+31,Research Scientist,7077,11,3,Yes,Yes
+39,Sales Executive,9212,6,3,No,No
+49,HR Specialist,9573,1,3,No,No
+36,Research Scientist,8748,8,2,No,No
+49,Software Engineer,11792,1,3,Yes,No
+21,Sales Executive,5633,1,2,Yes,Yes
+43,Software Engineer,11018,0,1,No,Yes
+37,Sales Executive,9373,6,3,No,No
+34,Manager,13383,3,3,Yes,Yes
+37,Sales Executive,9018,0,3,No,No
+21,Sales Executive,6200,1,1,Yes,No
+35,Sales Executive,8121,0,3,Yes,No
+39,Research Scientist,9145,3,3,No,No
+48,Software Engineer,11249,1,3,No,No
+32,Sales Executive,7835,4,3,Yes,Yes
+30,Software Engineer,7996,1,4,No,No
+32,Research Scientist,7069,1,3,Yes,Yes
+44,Research Scientist,8562,6,3,No,No
+39,Research Scientist,7455,0,4,No,No
+32,Research Scientist,8016,11,3,Yes,Yes
+41,Software Engineer,9571,9,3,Yes,No
+37,Sales Executive,8065,5,3,No,No
+44,Sales Executive,8627,4,3,No,No
+31,Manager,13196,11,2,No,No
+34,HR Specialist,5826,1,3,Yes,No
+33,Research Scientist,8225,0,4,No,No
+25,Sales Executive,7105,1,4,No,No
+39,Software Engineer,9307,7,2,No,No
+39,Research Scientist,9671,0,3,No,No
+37,Sales Executive,9249,4,2,No,No
+35,Sales Executive,8105,15,4,No,No
+25,Software Engineer,5700,5,4,No,No
+33,Software Engineer,10014,3,3,No,No
+34,Sales Executive,7286,0,3,No,No
+30,Sales Executive,6412,8,3,Yes,No
+35,Sales Executive,8913,4,3,No,No
+40,Software Engineer,11363,0,1,No,Yes
+52,Sales Executive,12190,0,3,No,No
+38,Sales Executive,9178,12,3,Yes,No
+39,Software Engineer,10076,5,3,Yes,No
+36,Sales Executive,8992,8,3,No,No
+21,Software Engineer,6935,1,4,Yes,No
+36,Sales Executive,8648,4,2,No,Yes
+37,Sales Executive,8722,3,3,Yes,No
+56,Sales Executive,12042,2,3,Yes,Yes
+35,Software Engineer,8547,1,3,Yes,No
+39,Manager,14851,2,3,Yes,No
+36,Manager,13464,7,2,No,No
+27,Research Scientist,6100,4,2,Yes,Yes
+46,Software Engineer,10386,11,3,No,No
+43,Sales Executive,9077,2,3,No,No
+43,Sales Executive,9847,4,2,No,No
+29,Manager,14055,4,3,No,Yes
+48,Sales Executive,11190,4,3,No,No
+25,Sales Executive,5557,5,3,No,No
+41,Sales Executive,8786,1,3,Yes,No
+54,Sales Executive,12284,3,2,No,No
+29,Sales Executive,6630,0,1,No,Yes
+32,Software Engineer,8325,2,3,No,No
+37,Research Scientist,8290,3,3,No,No
+32,Manager,13178,5,3,No,No
+24,Manager,12383,4,3,No,No
+37,Research Scientist,7159,4,3,No,No
+28,Sales Executive,6679,6,4,No,No
+40,Research Scientist,8691,3,3,Yes,Yes
+29,Software Engineer,6964,5,3,No,No
+49,Sales Executive,11084,0,3,Yes,Yes
+30,Software Engineer,8088,1,2,Yes,No
+34,Research Scientist,7751,2,3,No,No
+43,Software Engineer,10574,3,2,Yes,No
+27,Research Scientist,6978,0,4,Yes,No
+38,Sales Executive,8915,0,3,Yes,Yes
+47,HR Specialist,8702,1,3,No,Yes
+24,Software Engineer,7093,4,3,No,No
+38,Sales Executive,9165,2,1,No,No
+39,Manager,15049,3,1,No,No
+43,Research Scientist,9064,1,3,No,Yes
+27,Manager,12438,4,1,Yes,No
+26,Software Engineer,6982,1,3,No,No
+41,Research Scientist,7838,1,4,No,No
+39,Sales Executive,10069,3,4,No,No
+39,Sales Executive,8273,0,3,Yes,Yes
+39,Research Scientist,7904,0,2,No,No
+31,Software Engineer,7848,1,4,No,Yes
+38,Sales Executive,9376,0,4,Yes,Yes
+39,Sales Executive,8843,0,2,No,No
+31,Manager,14328,2,3,Yes,Yes
+51,HR Specialist,9275,8,2,Yes,No
+40,Research Scientist,8667,4,3,No,No
+27,Sales Executive,6358,3,4,Yes,No
+42,Sales Executive,10847,1,1,No,Yes
+29,Sales Executive,6507,9,4,No,No
+43,HR Specialist,8425,2,3,Yes,No
+46,Sales Executive,10660,0,4,No,No
+30,Software Engineer,8348,4,3,Yes,Yes
+44,Sales Executive,9808,0,3,Yes,No
+40,Software Engineer,9822,2,1,Yes,No
+43,Software Engineer,10466,3,2,Yes,No
+52,Manager,17271,10,1,Yes,No
+35,Sales Executive,8878,3,4,No,Yes
+30,Sales Executive,8726,6,3,No,Yes
+29,Sales Executive,6885,9,4,Yes,No
+30,HR Specialist,5078,0,4,No,Yes
+36,Manager,14427,1,1,No,No
+39,Software Engineer,11267,2,3,No,No
+39,Software Engineer,9237,2,1,No,Yes
+43,Software Engineer,11423,2,2,Yes,No
+37,Sales Executive,9666,11,2,Yes,Yes
+48,HR Specialist,8807,6,3,No,No
+34,Research Scientist,7761,4,2,No,No
+58,Research Scientist,12717,1,2,Yes,No
+42,Research Scientist,8632,8,2,No,No
+30,Sales Executive,7277,10,2,No,No
+28,Sales Executive,6690,8,4,No,No
+40,Software Engineer,9291,0,3,No,No
+35,Sales Executive,7910,5,4,No,No
+42,Software Engineer,9525,0,3,No,Yes
+40,Sales Executive,9220,1,2,No,No
+36,Research Scientist,7318,0,3,No,Yes
+30,Sales Executive,7540,4,2,Yes,No
+24,Research Scientist,4686,4,2,No,No
+33,Software Engineer,8838,0,2,No,No
+43,Sales Executive,10240,2,2,Yes,Yes
+38,Software Engineer,8343,3,2,No,No
+27,Research Scientist,6384,2,3,No,No
+38,Software Engineer,10276,0,3,No,No
+40,HR Specialist,6974,2,1,Yes,No
+29,Software Engineer,8923,6,2,Yes,No
+38,Sales Executive,9091,0,3,No,Yes
+37,Sales Executive,8236,0,2,Yes,Yes
+27,Sales Executive,6826,2,2,No,No
+39,Software Engineer,10054,14,4,No,No
+41,Sales Executive,9425,5,2,Yes,No
+45,Research Scientist,9723,5,1,No,Yes
+45,Software Engineer,10247,2,3,No,No
+25,Research Scientist,5901,4,2,No,No
+29,Software Engineer,7071,0,3,No,No
+41,Sales Executive,9313,5,3,No,Yes
+41,Sales Executive,8837,12,2,No,Yes
+41,Software Engineer,9638,4,3,No,No
+62,Research Scientist,13201,10,3,No,No
+41,Software Engineer,10734,6,2,No,No
+46,Research Scientist,9945,0,3,No,Yes
+44,Sales Executive,9264,11,2,No,No
+42,Manager,15370,0,3,No,No
+34,Software Engineer,9547,3,1,Yes,No
+43,Software Engineer,10525,0,3,No,No
+30,Sales Executive,8791,0,2,Yes,No
+35,Software Engineer,9235,2,3,Yes,Yes
+33,Research Scientist,7355,1,1,Yes,Yes
+37,Sales Executive,8474,3,3,No,No
+55,HR Specialist,10480,4,3,No,No
+22,Sales Executive,5868,0,3,No,No
+42,HR Specialist,8484,0,3,No,No
+24,Research Scientist,6194,4,3,No,Yes
+33,Sales Executive,7468,2,3,No,No
+45,Research Scientist,8601,6,4,No,Yes
+37,Manager,13558,5,2,No,No
+28,Software Engineer,8044,8,3,Yes,No
+31,Manager,12917,5,3,No,No
+42,Software Engineer,8968,2,4,No,No
+31,Software Engineer,8513,5,4,No,No
+38,Manager,16335,1,3,Yes,No
+37,Sales Executive,8656,1,2,No,No
+31,Research Scientist,7383,7,3,Yes,No
+54,Sales Executive,11769,2,3,No,No
+42,HR Specialist,8000,8,3,No,No
+21,HR Specialist,4831,1,3,No,No
+38,Sales Executive,8665,9,3,Yes,No
+31,Software Engineer,8440,11,3,No,No
+43,HR Specialist,8433,2,4,No,No
+30,Sales Executive,6999,1,3,No,Yes
+36,Software Engineer,9775,4,2,No,No
+41,HR Specialist,7775,2,3,Yes,Yes
+43,Sales Executive,9286,4,3,No,No
+27,Software Engineer,7881,6,2,No,No
+34,Sales Executive,7580,5,2,No,No
+33,HR Specialist,6456,2,4,Yes,No
+31,HR Specialist,6074,0,2,No,No
+51,HR Specialist,10331,2,3,No,No
+40,Research Scientist,8784,0,3,No,No
+26,Manager,12664,6,3,Yes,No
+44,Manager,16410,2,3,No,No
+53,Research Scientist,11674,0,2,Yes,Yes
+45,Manager,16434,0,3,Yes,Yes
+24,Sales Executive,6326,4,3,Yes,No
+33,Software Engineer,7852,5,3,No,No
+47,Sales Executive,9820,2,2,No,No
+31,Sales Executive,7396,0,3,No,Yes
+40,Sales Executive,8834,2,2,Yes,Yes
+43,Software Engineer,10327,1,2,No,No
+29,Research Scientist,6553,5,2,No,Yes
+36,Software Engineer,9497,4,2,No,No
+21,Sales Executive,5737,1,3,No,No
+28,Research Scientist,6631,1,2,Yes,No
+34,Research Scientist,7458,14,4,No,Yes
+27,Software Engineer,6374,3,4,Yes,Yes
+50,Research Scientist,9736,5,3,No,Yes
+25,Software Engineer,7113,0,2,Yes,No
+33,Manager,13214,3,3,Yes,No
+38,Software Engineer,9899,0,3,No,No
+48,Sales Executive,11558,3,3,No,No
+25,Sales Executive,7231,5,1,Yes,No
+46,Manager,16151,2,3,No,Yes
+37,Sales Executive,9554,0,3,No,No
+29,Manager,13309,0,3,Yes,No
+40,Research Scientist,8297,2,2,No,No
+38,HR Specialist,6971,0,3,Yes,Yes
+32,Software Engineer,8278,0,2,No,No
+37,HR Specialist,6927,7,2,No,No
+33,Research Scientist,7342,3,4,Yes,No
+37,Software Engineer,9456,1,2,Yes,No
+42,Research Scientist,8861,11,2,No,No
+49,Research Scientist,10382,0,1,No,Yes
+27,Software Engineer,8274,7,4,No,No
+54,Manager,18289,1,3,No,No
+21,HR Specialist,3389,1,3,No,Yes
+35,Software Engineer,7467,4,3,Yes,No
+41,Research Scientist,9240,8,2,No,No
+39,Research Scientist,7499,19,3,No,No
+32,Software Engineer,8325,1,3,Yes,No
+35,Sales Executive,7597,15,1,Yes,Yes
+33,Sales Executive,6858,2,3,Yes,No
+32,Research Scientist,7384,2,4,No,Yes
+43,Sales Executive,10195,2,1,No,No
+39,Sales Executive,8674,3,2,Yes,No
+31,Sales Executive,6025,0,2,No,No
+44,Sales Executive,9592,4,2,Yes,No
+39,Sales Executive,9255,3,4,No,No
+43,HR Specialist,7352,7,3,Yes,No
+42,Research Scientist,8970,8,3,No,No
+30,Research Scientist,6690,2,3,No,No
+32,Software Engineer,8807,1,2,No,No
+42,Sales Executive,9631,1,3,No,No
+41,HR Specialist,7296,1,3,Yes,Yes
+36,Software Engineer,9897,0,3,No,No
+37,Sales Executive,8564,2,4,Yes,No
+47,Research Scientist,9743,1,3,Yes,Yes
+32,Manager,13200,12,3,No,Yes
+41,HR Specialist,7614,4,3,Yes,No
+35,Research Scientist,7069,2,2,Yes,No
+35,Software Engineer,8896,4,1,No,Yes
+45,Sales Executive,11127,0,2,No,No
+43,HR Specialist,7416,2,2,No,No
+43,Sales Executive,8771,4,3,Yes,No
+47,HR Specialist,9842,3,3,Yes,No
+37,Software Engineer,9234,2,4,No,No
+42,Software Engineer,9858,22,3,Yes,Yes
+34,Research Scientist,8043,10,3,Yes,No
+39,Sales Executive,8656,4,1,No,No
+35,Sales Executive,9395,4,1,No,No
+37,Sales Executive,9066,4,3,No,No
+41,Sales Executive,9087,1,3,Yes,No
+30,Software Engineer,9394,2,3,Yes,No
+53,Research Scientist,10476,0,2,No,Yes
+28,Sales Executive,7485,3,1,Yes,No
+27,HR Specialist,5539,3,3,No,No
+46,Manager,17061,1,2,No,No
+43,HR Specialist,9176,16,1,No,No
+41,HR Specialist,7899,12,3,Yes,Yes
+42,Sales Executive,9107,6,2,Yes,No
+36,Research Scientist,8055,3,3,No,No
+29,Software Engineer,7513,9,2,No,No
+37,Software Engineer,10568,0,2,No,No
+31,Sales Executive,7661,7,3,Yes,No
+44,Manager,15700,0,3,Yes,Yes
+35,Sales Executive,8410,7,3,No,No
+30,Sales Executive,6591,1,3,No,Yes
+34,Research Scientist,6837,10,2,No,No
+40,Software Engineer,10620,14,3,Yes,Yes
+32,Software Engineer,8065,0,2,No,Yes
+30,Sales Executive,6771,3,3,No,No
+38,Manager,15161,18,3,No,No
+38,Sales Executive,9551,3,4,No,No
+32,Sales Executive,8191,9,3,Yes,No
+33,Manager,14537,4,1,No,No
+38,HR Specialist,6885,2,1,Yes,No
+25,Manager,11646,1,3,No,No
+25,Manager,13400,1,3,No,Yes
+31,Software Engineer,8086,7,3,No,No
+35,Software Engineer,8849,2,2,No,No
+39,Sales Executive,9816,3,2,Yes,No
+48,Research Scientist,10273,3,1,No,Yes
+43,Research Scientist,9313,4,4,No,No
+35,Sales Executive,9599,10,3,Yes,Yes
+36,Software Engineer,8793,16,4,Yes,No
+28,Research Scientist,6896,2,2,No,No
+36,Sales Executive,8514,8,3,Yes,Yes
+34,Sales Executive,8281,7,3,No,No
+39,Software Engineer,10637,4,2,No,No
+30,Sales Executive,7704,10,3,No,No
+41,Manager,15702,1,4,Yes,No
+49,Research Scientist,10763,0,4,No,Yes
+36,Research Scientist,7561,9,3,No,No
+40,Software Engineer,9396,2,2,Yes,No
+42,Manager,14933,9,2,No,No
+33,Research Scientist,6060,11,4,No,No
+38,Software Engineer,10773,0,1,No,Yes
+37,Software Engineer,8698,10,3,Yes,No
+37,Sales Executive,8527,2,3,No,No
+30,Manager,13233,3,3,Yes,No
+37,Software Engineer,9544,4,4,Yes,No
+40,Software Engineer,10389,13,2,No,No
+48,Manager,17156,0,2,No,No
+44,Manager,15570,3,1,Yes,Yes
+54,Software Engineer,12319,5,3,Yes,No
+30,Manager,13569,6,2,Yes,No
+43,Software Engineer,10290,5,2,Yes,No
+38,Software Engineer,10504,0,3,Yes,No
+54,Software Engineer,12714,1,4,Yes,No
+30,Software Engineer,8540,2,2,No,No
+30,Sales Executive,7797,8,3,No,No
+32,Manager,14464,1,4,No,No
+21,Manager,11888,1,1,No,Yes
+32,Sales Executive,6981,12,1,Yes,No
+30,Manager,13639,0,2,No,Yes
+38,Sales Executive,8449,18,3,No,No
+39,Research Scientist,8002,5,2,No,No
+52,Software Engineer,12411,8,4,No,No
+44,Sales Executive,10662,1,3,No,No
+32,Manager,13772,0,3,No,No
+29,Manager,13405,6,2,Yes,No
+40,Research Scientist,9521,8,3,No,Yes
+26,Sales Executive,6824,6,3,No,No
+51,Sales Executive,12741,0,3,No,No
+46,Software Engineer,11319,7,3,No,No
+33,HR Specialist,5383,7,3,Yes,Yes
+23,Software Engineer,7292,3,4,No,No
+47,Sales Executive,10688,7,3,No,Yes
+36,Software Engineer,9953,9,3,No,No
+46,Research Scientist,9983,4,1,No,No
+24,Software Engineer,6936,0,1,Yes,Yes
+32,Sales Executive,7025,3,2,No,No
+37,Software Engineer,9234,0,3,No,No
+37,Research Scientist,7449,2,3,No,No
+33,HR Specialist,6091,2,3,No,No
+41,Research Scientist,9033,0,4,No,No
+28,Software Engineer,8741,2,4,No,No
+35,HR Specialist,7036,0,4,Yes,No
+37,Sales Executive,7942,8,2,No,No
+41,HR Specialist,8146,14,3,No,No
+42,Software Engineer,10977,0,2,No,No
+28,Sales Executive,6674,8,2,No,No
+24,Research Scientist,5539,3,2,No,No
+47,Software Engineer,11168,1,2,Yes,No
+39,Sales Executive,8549,0,3,No,No
+31,Software Engineer,8668,3,3,Yes,Yes
+49,Research Scientist,10047,7,2,No,Yes
+37,Software Engineer,9611,6,3,Yes,No
+46,Sales Executive,9747,0,3,Yes,No
+37,Manager,14397,0,2,No,No
+53,HR Specialist,10473,2,3,Yes,Yes
+51,HR Specialist,9456,1,2,No,No
+35,Software Engineer,10036,1,3,No,Yes
+44,Sales Executive,9680,1,3,Yes,No
+42,Software Engineer,10394,8,2,No,No
+47,Sales Executive,11019,13,2,No,No
+29,Sales Executive,6368,2,3,No,No
+42,Research Scientist,7803,11,4,Yes,No
+45,Research Scientist,8484,1,2,Yes,Yes
+22,Software Engineer,7417,2,3,Yes,No
+27,Software Engineer,7228,1,3,Yes,No
+21,Research Scientist,6614,1,4,Yes,No
+34,Sales Executive,7781,14,3,No,No
+42,HR Specialist,8170,4,3,No,No
+49,Research Scientist,11045,2,3,No,No
+37,Research Scientist,9163,5,4,No,No
+50,Sales Executive,12236,0,3,Yes,Yes
+25,Software Engineer,7925,5,2,Yes,Yes
+23,Software Engineer,7454,3,1,Yes,No
+36,Sales Executive,8835,2,3,Yes,No
+40,Sales Executive,9667,4,3,No,No
+36,Software Engineer,8849,4,2,No,No
+21,Software Engineer,5989,0,3,No,No
+36,Sales Executive,8477,5,3,No,Yes
+26,HR Specialist,5077,1,2,No,Yes
+42,Sales Executive,9288,6,4,No,Yes
+39,Research Scientist,8737,8,2,Yes,Yes
+29,HR Specialist,6293,8,1,No,No
+32,Research Scientist,7113,4,3,No,No
+28,Software Engineer,8626,3,3,Yes,Yes
+36,Research Scientist,7094,0,1,No,No
+44,Sales Executive,9803,7,3,No,No
+29,HR Specialist,5289,1,3,No,Yes
+41,Research Scientist,7560,3,2,No,Yes
+32,Manager,13710,1,2,Yes,Yes
+30,Sales Executive,7326,0,3,No,Yes
+36,Sales Executive,9388,4,2,No,No
+28,Sales Executive,7418,0,4,No,No
+32,Software Engineer,7845,6,3,Yes,Yes
+27,Research Scientist,7272,1,4,No,No
+52,Manager,18092,0,2,No,No
+37,Research Scientist,8309,3,4,No,No
+31,HR Specialist,5944,0,3,No,No
+38,Sales Executive,8264,1,2,No,Yes
+36,Manager,14256,6,1,No,No
+35,Software Engineer,9653,0,1,No,No
+41,Software Engineer,11210,9,3,Yes,Yes
+43,Manager,16665,0,3,No,Yes
+32,Software Engineer,8166,1,2,Yes,No
+32,Software Engineer,7788,6,3,No,No
+34,Sales Executive,8204,1,2,Yes,No
+21,Sales Executive,4718,0,3,Yes,Yes
+24,HR Specialist,5013,2,3,Yes,Yes
+47,Software Engineer,11071,1,3,Yes,Yes
+50,Software Engineer,11420,9,3,No,No
+35,Research Scientist,6643,1,3,No,Yes
+41,Sales Executive,9688,7,3,No,Yes
+39,Sales Executive,8700,11,3,Yes,No
+61,Software Engineer,12978,2,3,Yes,No
+45,Research Scientist,7676,12,2,Yes,No
+35,Sales Executive,8283,2,2,Yes,No
+29,Research Scientist,7583,9,1,No,No
+24,Sales Executive,7316,0,3,Yes,Yes
+38,Software Engineer,9265,5,3,No,Yes
+30,Sales Executive,7038,3,3,Yes,Yes
+25,Software Engineer,7481,2,2,Yes,No
+31,Research Scientist,6280,5,3,No,No
+28,Research Scientist,6521,6,3,No,No
+50,Sales Executive,11459,0,3,Yes,No
+44,Sales Executive,10656,0,3,Yes,No
+36,Research Scientist,7719,6,3,No,Yes
+48,Research Scientist,9817,5,2,Yes,Yes
+37,Software Engineer,8833,16,4,Yes,No
+30,Sales Executive,6903,7,2,No,No
+49,Software Engineer,11384,15,4,No,No
+41,Manager,15600,6,3,No,No
+28,Software Engineer,8288,1,3,No,No
+35,Sales Executive,7818,0,1,No,No
+29,Research Scientist,7415,7,3,No,No
+25,Sales Executive,6337,5,3,No,No
+44,Sales Executive,9907,0,2,No,No
+52,HR Specialist,9411,2,3,Yes,No
+25,Sales Executive,5045,5,4,No,Yes
+41,Research Scientist,9210,3,3,No,No
+31,Software Engineer,8722,2,3,No,No
+33,Software Engineer,8471,3,1,No,No
+32,Software Engineer,8500,1,3,No,No
+30,Sales Executive,7709,2,2,Yes,No
+37,Research Scientist,7022,2,3,No,No
+30,Research Scientist,6382,0,4,Yes,No
+39,Sales Executive,9496,7,3,Yes,No
+36,Research Scientist,7027,2,1,Yes,Yes
+35,Sales Executive,8476,8,3,No,No
+29,Sales Executive,6406,9,3,Yes,Yes
+32,Research Scientist,7339,1,3,No,No
+43,Sales Executive,9718,5,3,No,No
+41,Software Engineer,9110,3,3,Yes,No
+29,Software Engineer,8618,9,3,No,No
+37,Manager,14219,1,3,No,No
+43,Sales Executive,9253,5,2,Yes,Yes
+23,Sales Executive,6260,3,2,No,No
+41,Sales Executive,10069,1,3,Yes,Yes
+31,Software Engineer,7670,0,3,No,Yes
+41,Software Engineer,10117,5,3,No,No
+30,Sales Executive,7657,6,3,No,No
+22,HR Specialist,4875,1,1,No,No
+23,Sales Executive,6245,3,3,Yes,No
+37,Research Scientist,7739,2,2,Yes,No
+39,Software Engineer,9223,6,2,No,No
+29,Manager,13271,1,3,No,No
+42,Software Engineer,9616,11,1,No,No
+23,Manager,10387,1,3,No,No
+36,Research Scientist,8041,2,2,No,No
+27,Manager,13402,0,4,No,No
+31,Sales Executive,6162,0,3,Yes,No
+37,Manager,14054,3,2,No,No
+30,Research Scientist,7071,1,3,No,Yes
+33,Manager,15174,9,3,Yes,No
+45,Research Scientist,9412,0,4,No,No
+32,Software Engineer,8023,2,2,No,No
+43,Research Scientist,8930,2,4,No,No
+27,Software Engineer,8384,0,4,Yes,No
+41,Sales Executive,8992,0,4,No,Yes
+48,Sales Executive,10160,2,3,No,No
+21,Sales Executive,5490,1,3,No,No
+30,Sales Executive,6828,2,3,Yes,No
+41,Manager,15453,3,3,Yes,Yes
+35,Sales Executive,9274,4,3,No,No
+39,HR Specialist,7713,0,3,No,No
+32,Research Scientist,6908,3,3,No,No
+37,Sales Executive,8484,16,3,No,No
+35,Software Engineer,8062,3,3,Yes,No
+46,Software Engineer,11509,5,2,No,No
+39,Research Scientist,8273,1,3,Yes,Yes
+39,Software Engineer,9611,7,3,No,No
+33,Software Engineer,10555,7,3,No,No
+33,Sales Executive,8119,3,3,No,No
+33,HR Specialist,5988,13,3,No,No
+40,HR Specialist,7444,0,4,No,No
+33,Software Engineer,9329,0,2,Yes,Yes
+39,Sales Executive,9087,7,3,Yes,No
+53,Software Engineer,11377,8,3,No,No
+43,Sales Executive,10291,0,3,No,No
+34,Sales Executive,7719,1,2,Yes,Yes
+46,Sales Executive,11403,0,3,No,No
+33,Research Scientist,7888,1,2,No,No
+21,Manager,11511,1,1,No,Yes
+28,Software Engineer,8508,3,2,No,No
+22,Software Engineer,6700,2,1,No,Yes
+34,Research Scientist,7931,2,4,Yes,No
+37,Research Scientist,8250,0,4,Yes,No
+50,Research Scientist,9792,1,3,No,No
+39,HR Specialist,7133,5,3,No,No
+35,Sales Executive,8917,15,2,Yes,No
+43,Manager,15539,9,3,No,No
+21,Software Engineer,6237,0,3,No,Yes
+38,Research Scientist,7566,11,4,No,No
+43,Software Engineer,10694,7,3,Yes,No
+25,Research Scientist,7037,5,3,No,No
+46,Manager,15639,3,2,No,No
+39,HR Specialist,7534,2,4,No,No
+33,Research Scientist,8087,1,1,No,No
+42,Sales Executive,9512,0,3,No,No
+55,Software Engineer,12871,1,3,No,No
+38,HR Specialist,6702,1,3,Yes,No
+38,Sales Executive,9096,3,2,No,No
+33,Software Engineer,8527,6,4,No,No
+30,Software Engineer,8691,3,2,No,No
+43,Software Engineer,11152,0,3,Yes,Yes
+30,Sales Executive,8953,10,2,Yes,No
+37,Software Engineer,9707,14,2,No,No
+33,HR Specialist,6635,7,3,No,No
+40,Sales Executive,9316,20,3,No,No
+39,Sales Executive,8808,3,2,No,No
+45,HR Specialist,8803,16,2,No,Yes
+32,Sales Executive,7582,0,3,No,Yes
+34,Manager,14221,2,3,No,No
+29,Research Scientist,7310,1,4,No,No
+33,Sales Executive,7336,1,1,No,Yes
+40,Manager,15883,0,3,Yes,Yes
