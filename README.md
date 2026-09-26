@@ -76,21 +76,20 @@ Traditional synthetic data workflows either produce unrealistic data or suffer f
 - [x] Unit test suite for validation & profiling (`tests/test_profiler.py`)
 
 ### Phase 2 — Synthetic Data Generation
-**Status: In Progress ⏳**
-- [ ] Base generator interface (`BaseTabularGenerator`)
-- [ ] CTGAN (Conditional Tabular GAN) implementation
-- [ ] TVAE (Tabular Variational Autoencoder) implementation
-- [ ] Gaussian Copula baseline probabilistic generator
-- [ ] Generation configuration & progress tracking
-- [ ] Synthetic dataset preview & CSV export
-- [ ] Unit tests for generators
+**Status: Completed ✅**
+- [x] Base generator interface (`BaseTabularGenerator`)
+- [x] CTGAN (Conditional Tabular GAN) with Mode-Specific Normalization (VGM)
+- [x] TVAE (Tabular Variational Autoencoder) with latent Gaussian manifold
+- [x] Gaussian Copula probabilistic baseline generator
+- [x] Deterministic seed configuration and sampling verification
+- [x] Unit tests for all generators (`tests/test_generators.py`)
 
 ### Phase 3 — Comprehensive Evaluation Suite
-**Status: Pending ⏹️**
-- [ ] Statistical similarity metrics (Kolmogorov-Smirnov, 1-Wasserstein Distance, Total Variation Distance)
-- [ ] Correlation matrix differences & Cramer's V association for categorical variables
+**Status: In Progress ⏳**
+- [ ] Statistical similarity metrics (Kolmogorov-Smirnov, 1-Wasserstein, Total Variation Distance)
+- [ ] Correlation preservation & Cramer's V association
 - [ ] ML Utility (Train on Synthetic / Test on Real - Classification & Regression)
-- [ ] Empirical Privacy Risk (Exact match detection, Distance to Closest Record - DCR, Nearest Neighbor Distance Ratio - NNDR)
+- [ ] Empirical Privacy Risk (Exact matches, Distance to Closest Record - DCR, NNDR)
 - [ ] Unit tests for evaluators
 
 ### Phase 4 — Natural Language GenAI Interface
