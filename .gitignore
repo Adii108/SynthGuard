@@ -25,7 +25,7 @@ wheels/
 *.egg
 
 # Streamlit
-.streamlit/
+.streamlit/secrets.toml
 
 # Secrets & Environment
 .env
