@@ -93,18 +93,20 @@ Traditional synthetic data workflows either produce unrealistic data or suffer f
 - [x] Unit tests for all evaluators (`tests/test_evaluators.py`)
 
 ### Phase 4 — Natural Language GenAI Interface
-**Status: In Progress ⏳**
-- [ ] Natural language prompt parser (`IntentParser`)
-- [ ] Automated generation parameter extraction (sample sizes, priority columns, target objectives, privacy constraints)
-- [ ] LLM integration (Gemini / OpenAI API + local deterministic fallback)
-- [ ] Interactive configuration preview & parameter validation
+**Status: Completed ✅**
+- [x] Natural language prompt parser (`LocalIntentParser`)
+- [x] Automated generation parameter extraction (sample sizes, priority columns, target objectives, privacy constraints)
+- [x] LLM integration (Gemini / OpenAI API + deterministic local fallback)
+- [x] Interactive configuration preview & parameter validation
+- [x] Unit tests for natural language parsing (`tests/test_nlp.py`)
 
 ### Phase 5 — Automated Evaluation & AI Reporting
-**Status: Pending ⏹️**
-- [ ] Automated end-to-end pipeline execution
+**Status: In Progress ⏳**
+- [ ] End-to-end evaluation pipeline orchestrator (`EvaluationPipeline`)
 - [ ] Structured evaluation summary aggregation
-- [ ] AI-generated executive & technical report (strictly grounded on computed metrics)
-- [ ] Export to Markdown and text report
+- [ ] AI-generated executive & data science report (grounded strictly in computed metrics, avoiding hallucinations)
+- [ ] Multi-format report export (Markdown, HTML, text summary)
+- [ ] Integration tests for pipeline & reporting
 
 ### Phase 6 — Streamlit UI / UX
 **Status: Pending ⏹️**
